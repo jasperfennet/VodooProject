@@ -4,7 +4,7 @@ pipeline{
     stage('Example Build'){
       steps{
         echo 'helllo'
-        build 'Deploy on Ontwikkel'
+        build 'Folder/Deploy on Ontwikkel'
         echo 'Deploy Job started'
       }
     }
