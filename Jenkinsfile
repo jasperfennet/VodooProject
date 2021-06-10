@@ -9,7 +9,7 @@ pipeline{
     stage('Example Build'){
       steps{
         echo 'helllo'
-        build 'Folder/Deploy on Ontwikkel'
+        build (job : 'Folder/Deploy on Ontwikkel', parameters: [string('name', 'jasper')])
         echo 'Deploy Job started'
       }
     }
