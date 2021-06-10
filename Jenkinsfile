@@ -4,7 +4,7 @@ pipeline{
     stage('Example Build'){
       steps{
         echo 'helllo'
-        build (job : 'Folder/Deploy on Ontwikkel', parameters : [string(name :'name', value : 'jasper')])
+        build (job : 'Folder/Deploy on Ontwikkel', wait : false, propagate : false, parameters : [string(name :'name', value : 'jasper')])
         echo 'Deploy Job started'
       }
     }
